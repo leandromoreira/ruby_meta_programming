@@ -10,4 +10,5 @@
  * take care of including modules and how its order can affect the lookup for a method.
  * you can open a module Kernel and make your method available in all places. ( print ).
  * silly but it worth quote: Kernel.methods.grep /^pr/
+
 # Tuesday :: xxxx
