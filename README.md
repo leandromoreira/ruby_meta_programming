@@ -6,3 +6,4 @@
 ## Points
  * think twice, think again about use open class spell.
  * instance variables are not connected to the classes.
+ * think in instance methods of Class not methods of object.
