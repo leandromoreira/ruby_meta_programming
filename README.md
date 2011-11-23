@@ -9,6 +9,6 @@
  * think in instance methods of Class not methods of object.
  * take care of including modules and how its order can affect the lookup for a method.
  * you can open a module Kernel and make your method available in all places. ( print ).
- * silly but it worth quote: `Kernel.methods.grep /^pr/` ´Kernel.methods.grep /^pr/´
+ * silly but it worth quote: `Kernel.methods.grep /^pr/`
 
 # Tuesday :: xxxx
