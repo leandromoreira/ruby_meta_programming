@@ -11,4 +11,23 @@
  * you can open a module Kernel and make your method available in all places. ( print ).
  * silly but it worth quote: `Kernel.methods.grep /^pr/`
 
+```ruby
+module Kernel
+def dangerous_in_all_places
+end
+end
+
+
+class OrdinaryClass
+def method_a
+@instance_variable = 1
+dangerous_in_all_places
+end
+end
+
+obj = OrdinaryClass.new
+## here ther is no @instance_variable yet!
+
+```
+
 # Tuesday :: xxxx
