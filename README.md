@@ -10,19 +10,21 @@
  * take care of including modules and how its order can affect the lookup for a method.
  * you can open a module Kernel and make your method available in all places. ( print ).
  * silly but it worth quote: `Kernel.methods.grep /^pr/`
+ * magic mixin using modules it's a trick: a simple chain of heritance. *ClassOne -> ModuleOne -> ModuleTwo -> SuperClass*
 
+### Samples
 ```ruby
 module Kernel
-def dangerous_in_all_places
-end
+ def dangerous_in_all_places
+ end
 end
 
 
 class OrdinaryClass
-def method_a
-@instance_variable = 1
-dangerous_in_all_places
-end
+ def method_a
+  @instance_variable = 1
+  dangerous_in_all_places
+ end
 end
 
 obj = OrdinaryClass.new
