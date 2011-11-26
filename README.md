@@ -43,6 +43,7 @@ The day starts with a boring task that is: wrapping a old lib in a new brand new
 * you can create a new bright method just using the `define\_method`
 * the use of `define\_method` it is also know as _Dynamic Method_
 * be DRY on ruby it is funnier than Java
+* `method\_missing` plays a important role on metaprogramming theather.
 
 ### Samples
 ```ruby
@@ -57,5 +58,16 @@ class Frusciante
 end
 
 Frusciante.new.play_guitar "Fender"
+
+class All
+ def method_missing(method, *args)
+  puts "calling... #{method}(#{args.join(', ')})"
+ end
+end
+
+all = All.new
+all.add "my collection"
+all.save [:all,:none]
+all.show_map -45.2343, 35.34352
 
 ```
