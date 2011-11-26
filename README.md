@@ -33,4 +33,29 @@ obj = OrdinaryClass.new
 ```
 
 # Tuesday :: Methods 
-The day starts with a boring task that is: wrapping a old lib in a new brand new computer object in order to provide for report guys a better API.
+The day starts with a boring task that is: wrapping a old lib in a new brand new computer object in order to provide for report guys a better API. But the ruby it's a cool language and will empower you which such `send` or `define\_method`.
+
+## Points
+
+* remember the oo on ruby it's taken to its extremme, you really can send messages to object. `object.send(:my\_message,3)`
+* you can even call private methods by send WATCH OUT! there is a `public\_send` methdo which 'corrects' that break of encapsulation
+* the ability to send messages through `send` it is also know as _Dispatch_
+* you can create a new bright method just using the `define\_method`
+* the use of `define\_method` it is also know as _Dynamic Method_
+* be DRY on ruby it is funnier than Java
+
+### Samples
+```ruby
+puts 1 + 1
+#equals to
+puts 1.send(:+,1)
+
+class Frusciante
+ define_method :play_guitar do |type|
+  puts "Mr Frusciante plays #{type}"
+ end
+end
+
+Frusciante.new.play_guitar "Fender"
+
+```
