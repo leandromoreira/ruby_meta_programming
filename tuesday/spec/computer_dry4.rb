@@ -13,4 +13,8 @@ class Computer
   result
  end
 
+ def respond_to?(method)
+  @ds.respond_to?("get_#{method}_info") || super
+ end
+
 end
