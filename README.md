@@ -33,3 +33,4 @@ obj = OrdinaryClass.new
 ```
 
 # Tuesday :: xxxx
+The day starts with a boring task that is: wrapping a old lib in a new brand new computer object in order to provide for report guys a better API.
