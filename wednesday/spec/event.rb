@@ -6,7 +6,7 @@ def setup(&block)
  @setups << block
 end
 
-Dir.glob('*event.rb').each do |file|
+Dir.glob('*events.rb').each do |file|
  @setups = []
  @events = {}
  load file

@@ -77,7 +77,6 @@ all.show_map -45.2343, 35.34352
 
 ### Samples
 ```ruby
-
 #makin' closures at level and method scope (gates)
 outside = 9
 
@@ -90,4 +89,9 @@ end
 MyClass.new.insane_closure
 #it's cool creat a class without rely on class def keyword! ;)
 
+```
+# Thursday :: Class Definitions
+
+### Samples
+```ruby
 ```
