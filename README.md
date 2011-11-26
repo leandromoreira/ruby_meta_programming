@@ -75,8 +75,19 @@ all.show_map -45.2343, 35.34352
 
 # Wednesday :: Blocks
 
-## Points
-
 ### Samples
 ```ruby
+
+#makin' closures at level and method scope (gates)
+outside = 9
+
+MyClass = Class.new do 
+ define_method :insane_closure do
+  puts "Breaking all scopes #{outside}"
+ end
+end
+
+MyClass.new.insane_closure
+#it's cool creat a class without rely on class def keyword! ;)
+
 ```
