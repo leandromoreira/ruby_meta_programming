@@ -44,6 +44,7 @@ The day starts with a boring task that is: wrapping a old lib in a new brand new
 * the use of `define\_method` it is also know as _Dynamic Method_
 * be DRY on ruby it is funnier than Java
 * `method\_missing` plays a important role on metaprogramming theather.
+* try always use `method\_missing` for specific range of methods, don't handle all methods: restrict! You can create a chaing of bugs.
 
 ### Samples
 ```ruby
@@ -70,4 +71,12 @@ all.add "my collection"
 all.save [:all,:none]
 all.show_map -45.2343, 35.34352
 
+```
+
+# Wednesday :: Blocks
+
+## Points
+
+### Samples
+```ruby
 ```
