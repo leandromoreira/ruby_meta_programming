@@ -121,6 +121,12 @@ def pikachu.lighting(power)
 #on the other hand this class open (without know the name [Constant]) it's valid for every class Pokemon
 
 ```
+# Friday :: Code that writes code
+
+
+### Samples
+```ruby
+```
 # Final thought
 
 Use this to solve (existing) problems not to create (new one) problems! It seems silly but it's plain true. If you see duplication so refactor it and use (restricting, specifying and paying full atention) wisely.
