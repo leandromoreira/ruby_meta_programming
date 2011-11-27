@@ -95,3 +95,6 @@ MyClass.new.insane_closure
 ### Samples
 ```ruby
 ```
+# Final thought
+
+Use this to solve (existing) problems not to create (new one) problems! It seems silly but it's plain true. If you see duplication so refactor it and use (restricting, specifying and paying full atention) wisely.
